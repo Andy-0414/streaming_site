@@ -1,17 +1,16 @@
 var bar = document.getElementById('bar');
 var list = document.getElementById('list');
 var toggle = 0;
-bar.addEventListener('click',()=>{
-    if(toggle)
-    {
+
+bar.addEventListener('click', function() {
+    if (toggle) {
         toggle = 0;
-        bar.classList = "bar";
-        list.classList = "list";
+        bar.className = "bar";
+        list.className = "list";
     }
-    else
-    {
+    else {
         toggle = 1;
-        bar.classList = "bar bar_active";
-        list.classList = "list list_active";
+        bar.className = "bar bar_active";
+        list.className = "list list_active";
     }
 });

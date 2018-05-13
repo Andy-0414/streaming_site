@@ -12,7 +12,7 @@ html
     nav.left_bar
       a(href="/")
         span.logo SA
-      span#bar.bar
+      span#bar.bar(onClick="clk()")
         span.bar_line
         span.bar_line
         span.bar_line
@@ -24,10 +24,12 @@ html
     section
       h1.title= name
       .imgBox
+        if(episode)
+            video(src="./"+file_list[episode] controls)
+                track(kind="subtitles",srclang="ko",src="./"+subs[episode], default)
       .play_list
         ul
-          li 1
-          li 2
-          li 3
-          li 4
+          each file, index in file_list
+            a(href='/'+name+'/'+index)
+                li= file
   script(src=dir+'/bar.js')

@@ -15,8 +15,15 @@ section>div.imgBox{
     width: 100%;
     height: 600px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-image: url("img.png");
     background-attachment: fixed;
+}
+section>div.imgBox>video{
+    height: 100%;
 }
 section>div.play_list{
     width: 100%;
@@ -34,6 +41,9 @@ section>div.play_list{
     }
     section>h1.title{
         font-size: 5em;
+    }
+    section>div.imgBox>video{
+        width: 100%;
     }
     section>div.play_list{
         font-size: 3em;
