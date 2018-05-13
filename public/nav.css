@@ -26,10 +26,15 @@ span.logo{
     justify-content: center;
     align-items: center;
 
-    text-shadow: 0px 0px 10px #F4EFE9;
+    transition: 0.5s;
+
+    text-shadow: 0px 0px 5px #F4EFE9;
     font-family: 'Titan One', cursive;
     font-size: 3em;
     color: #F4EFE9;
+}
+span.logo:hover{
+    color: rgb(193, 225, 255);
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
     span.logo{
