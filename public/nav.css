@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #F4EFE9;
+}
+a{
+    text-decoration: none;
+}
+nav.left_bar{
+    position: fixed;
+    height: 100%;
+    width: 80px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #0E1924;
+    box-shadow: 2px 0px 20px #0E1924;
+    z-index: 10;
+}
+span.logo{
+    height: 70px;
+    width: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 0px 0px 10px #F4EFE9;
+    font-family: 'Titan One', cursive;
+    font-size: 3em;
+    color: #F4EFE9;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    span.logo{
+        font-size: 6em;
+    }
+    nav.left_bar{
+        height: 10%;
+        width: 100%;
+
+        justify-content: center;
+        flex-direction: row;
+
+        box-shadow: 0px 2px 20px #0A1C28;
+    }
+}
