@@ -16,29 +16,9 @@ app.get(['/', '/:name', '/:name/:episode'], (req, res) => {
     fs.readdir('file/', (err, files) => {
         if (name) {
             fs.readdir('file/' + name, (err, fl) => {
-                // var videos = file_list.map((value)=>{
-                //     if(path.extname(value) == ".mp4")
-                //     {
-                //         return value;
-                //     }
-                // }).filter((n)=>{return n != undefined;});//videos
-                // var subs = file_list.map((value) => {
-                //     if (path.extname(value) == ".vtt") {
-                //         return value;
-                //     }
-                // }).filter((n) => { return n != undefined; });//sub
-
                 var videos = new Array([]);
                 var subs = new Array([]);
                 try {
-                    // for (var i = 0; i < fl.length; i++) {
-                    //     if (path.extname(fl[i]) == '.mp4') {
-                    //         videos.push(fl[i]);
-                    //     }
-                    //     if (path.extname(fl[i]) == '.vtt') {
-                    //         subs.push(fl[i]);
-                    //     }
-                    // }
                     fl.forEach((value) => {
                         if (path.extname(value) == '.mp4') {
                             videos.push(value);

@@ -6,8 +6,9 @@ html
     link(rel='stylesheet', href=dir+'/nav.css')
     link(rel='stylesheet', href=dir+'/bar.css')
     link(rel='stylesheet', href=dir+'/section.css')
+    link(rel='stylesheet', href=dir+'/mobile.css')
     meta(charset='UTF-8')
-    title S
+    title Sunrin Ani
   body
     nav.left_bar
       a(href="/")
@@ -23,7 +24,7 @@ html
                 li.bar_list= v
     section
       h1.title= name
-      .imgBox
+      #imgBox.imgBox
         if(episode)
             video(src="./"+file_list[episode] controls)
                 track(kind="subtitles",srclang="ko",src="./"+subs[episode], default)

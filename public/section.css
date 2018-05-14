@@ -21,6 +21,8 @@ section>div.imgBox{
 
     background-image: url("img.png");
     background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
 }
 section>div.imgBox>video{
     height: 100%;
@@ -32,20 +34,4 @@ section>div.play_list{
     justify-content: center;
 
     font-size: 2em;
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
-    section{
-        margin: 0;
-        padding-top: 17.5%;
-        width: 100%;
-    }
-    section>h1.title{
-        font-size: 5em;
-    }
-    section>div.imgBox>video{
-        width: 100%;
-    }
-    section>div.play_list{
-        font-size: 3em;
-    }
 }

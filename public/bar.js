@@ -1,6 +1,9 @@
 var bar = document.getElementById('bar');
 var list = document.getElementById('list');
+var imgBox = document.getElementById('imgBox');
 var toggle = 0;
+var link = document.location.href.split('/')[3];
+imgBox.style.backgroundImage = "url(" + '../' + link + '/img.jpg'+")";
 
 bar.addEventListener('click', function() {
     if (toggle) {
